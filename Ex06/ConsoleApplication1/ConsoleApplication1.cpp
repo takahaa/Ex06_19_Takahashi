@@ -18,8 +18,9 @@ int main()
     cout << "奥行を入力してください" << endl;
     cin >> d;
 
-    Box box(w, h, d);
-    cout <<  "表面積：" << box.GetSurface()<< "\n体積：" << box.GetVolume() << endl;
+    Box *box = new Box(w, h, d);
+    //Box box(w, h, d);4+12+6
+    cout <<  "表面積：" << box->GetSurface()<< "\n体積：" << box->GetVolume() << endl;
 }
 
 Box::Box(float width, float height, float depth)
@@ -31,7 +32,7 @@ Box::Box(float width, float height, float depth)
 
 float Box::GetSurface()
 {
-    return (width * height + width * depth + height + depth) * 2;
+    return (width * height + width * depth + height * depth) * 2;
 }
 
 float Box::GetVolume()
