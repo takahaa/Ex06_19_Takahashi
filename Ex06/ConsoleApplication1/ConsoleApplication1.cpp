@@ -19,7 +19,6 @@ int main()
     cin >> d;
 
     Box *box = new Box(w, h, d);
-    //Box box(w, h, d);4+12+6
     cout <<  "表面積：" << box->GetSurface()<< "\n体積：" << box->GetVolume() << endl;
 }
 
