@@ -20,6 +20,7 @@ int main()
 
     Box *box = new Box(w, h, d);
     cout <<  "表面積：" << box->GetSurface()<< "\n体積：" << box->GetVolume() << endl;
+    delete box;
 }
 
 Box::Box(float width, float height, float depth)
