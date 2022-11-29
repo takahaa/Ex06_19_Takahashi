@@ -1,4 +1,4 @@
-﻿// ConsoleApplication1.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
+// ConsoleApplication1.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
 #include <iostream>
@@ -7,21 +7,19 @@ using namespace std;
 
 int main()
 {
-    cout << "幅を入力してください" << endl;
     float w;
+    float h;
+    float d;
+
+    cout << "幅を入力してください" << endl;
     cin >> w;
     cout << "高さを入力してください" << endl;
-    float h;
     cin >> h;
     cout << "奥行を入力してください" << endl;
-    float d;
     cin >> d;
-
-    //cin >> Class.width;
 
     Box box(w, h, d);
     cout <<  "表面積：" << box.GetSurface()<< "\n体積：" << box.GetVolume() << endl;
-    //Box box = new Box(5,1,2);
 }
 
 Box::Box(float width, float height, float depth)
