@@ -10,5 +10,5 @@ private:
 public:
 	float GetSurface();
 	float GetVolume();
-	Box(float width, float height, float depth);//コンストラクタ
+	Box(float width, float height, float depth);//繧ｳ繝ｳ繧ｹ繝医Λ繧ｯ繧ｿ
 };
